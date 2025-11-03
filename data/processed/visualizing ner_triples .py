@@ -15,13 +15,13 @@ triples_path = next((f for f in possible_files if os.path.exists(f)), None)
 if not triples_path:
     raise FileNotFoundError("❌ No triples CSV found. Please check your file path.")
 
-print(f"✅ Using file: {triples_path}")
+print(f" Using file: {triples_path}")
 
 # Load and check data
 
 df = pd.read_csv(triples_path)
 df.columns = df.columns.str.lower()
-print("✅ Columns in dataset:", df.columns.tolist())
+print("Columns in dataset:", df.columns.tolist())
 
 required_cols = {"subject", "relation", "object"}
 if not required_cols.issubset(df.columns):
@@ -33,7 +33,7 @@ sample_size = 20
 if len(df) > sample_size:
     df = df.sample(n=sample_size, random_state=42)
 
-print(f"✅ Using {len(df)} triples for visualization")
+print(f" Using {len(df)} triples for visualization")
 
 # Build a directed graph
 
@@ -44,7 +44,7 @@ for _, row in df.iterrows():
     G.add_node(obj, color="lightgreen")
     G.add_edge(subj, obj, label=rel)
 
-print(f"✅ Graph built with {len(G.nodes())} nodes and {len(G.edges())} edges.")
+print(f" Graph built with {len(G.nodes())} nodes and {len(G.edges())} edges.")
 
 
 # Create PyVis Network
