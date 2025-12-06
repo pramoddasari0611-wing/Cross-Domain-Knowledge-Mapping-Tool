@@ -81,10 +81,10 @@ def load_data():
         return data
 
     except FileNotFoundError:
-        st.error("❌ Required file 'ner_triples.csv' not found. Ensure it was created.")
+        st.error(" Required file 'ner_triples.csv' not found. Ensure it was created.")
         st.stop()
     except Exception as e:
-        st.error(f"❌ An error occurred during final data loading: {e}")
+        st.error(f" An error occurred during final data loading: {e}")
         st.stop()
 
 #  Main Dashboard Structure
@@ -101,7 +101,7 @@ def admin_dashboard(data):
     """, unsafe_allow_html=True)
     
     # --- Sidebar Navigation ---
-    st.sidebar.title("⚙️ Admin Controls")
+    st.sidebar.title(" Admin Controls")
     st.sidebar.caption(f"User: {st.session_state['username']}")
     
     if st.sidebar.button("🚪 Log Out"):
@@ -117,7 +117,7 @@ def admin_dashboard(data):
     # --- Dataset Upload Status (for visual representation) ---
     st.sidebar.markdown("---") # Separator
     st.sidebar.markdown("### 💾 Loaded Dataset")
-    st.sidebar.success("✅ Loaded dataset from:")
+    st.sidebar.success(" Loaded dataset from:")
     st.sidebar.markdown(f"```\n/usr/src/app/ner_triples.csv\n```") 
 
     # Check for required columns
@@ -128,7 +128,7 @@ def admin_dashboard(data):
 
     # --- Overview Section ---
     if view == "Overview":
-        st.title("📊 Admin Dashboard & Distribution Analysis")
+        st.title("Admin Dashboard & Distribution Analysis")
         
         # Metrics
         col1, col2, col3 = st.columns(3)
@@ -139,7 +139,7 @@ def admin_dashboard(data):
         
         st.markdown("---")
 
-        st.header("📈 Distribution Analysis")
+        st.header(" Distribution Analysis")
         entity_counts = pd.concat([data['subject'], data['object']]).value_counts().head(10)
         relation_counts = data['relation'].value_counts().head(10)
 
