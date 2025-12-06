@@ -11,9 +11,8 @@ VALID_USERNAME = "admin"
 VALID_PASSWORD = "password123"
 plotly_config = {'displayModeBar': False, 'responsive': True} 
 
-# ------------------------------
-# 🔑 Authentication Functions
-# ------------------------------
+#  Authentication Functions
+
 
 def login_page():
     """Displays the login form and handles authentication."""
@@ -88,10 +87,7 @@ def load_data():
         st.error(f"❌ An error occurred during final data loading: {e}")
         st.stop()
 
-# ------------------------------
-# 🖥️ Main Dashboard Structure
-# ------------------------------
-
+#  Main Dashboard Structure
 def admin_dashboard(data):
     
     # --- Custom Dark Theme CSS ---
@@ -123,15 +119,14 @@ def admin_dashboard(data):
     st.sidebar.markdown("### 💾 Loaded Dataset")
     st.sidebar.success("✅ Loaded dataset from:")
     st.sidebar.markdown(f"```\n/usr/src/app/ner_triples.csv\n```") 
-    # --------------------------------------------------------
-    
+
     # Check for required columns
     required_cols = ['subject', 'relation', 'object']
     if not all(col in data.columns for col in required_cols):
         st.error(f"Data is missing required columns: {required_cols}. Cannot proceed.")
         return
 
-    # --- 📊 Overview Section ---
+    # --- Overview Section ---
     if view == "Overview":
         st.title("📊 Admin Dashboard & Distribution Analysis")
         
@@ -170,9 +165,9 @@ def admin_dashboard(data):
                 fig_relation.update_layout(yaxis={'categoryorder':'total ascending'}, plot_bgcolor='#1e293b', paper_bgcolor='#0f172a', font_color='white')
                 st.plotly_chart(fig_relation, config=plotly_config, width='stretch') 
 
-    # --- 🔍 Entity Viewer Section ---
+    # --- Entity Viewer Section ---
     elif view == "Entity Viewer":
-        st.title("🔍 Explore Extracted Relations")
+        st.title("Explore Extracted Relations")
         
         # --- Advanced Filtering for Entity Viewer ---
         search_column = st.selectbox(
@@ -202,9 +197,9 @@ def admin_dashboard(data):
         st.dataframe(display_data_final.head(num_rows), width='stretch')
 
 
-    # --- 🕸️ Relation Graph Section ---
+    # --- Relation Graph Section ---
     elif view == "Relation Graph":
-        st.title("🕸️ Knowledge Relation Graph")
+        st.title("Knowledge Relation Graph")
         
         # --- Filtering Controls ---
         st.markdown("Use the controls below to filter the graph by Entity or Relation Type, or reduce the sample size.")
@@ -285,19 +280,15 @@ def admin_dashboard(data):
             st.warning("No relations found based on the current filters.")
 
 
-    # --- 🧩 Feedback Section ---
+    # --- Feedback Section ---
     elif view == "Feedback Panel":
-        st.title("💬 User Feedback Summary")
+        st.title("User Feedback Summary")
         st.markdown("This panel is used for logging and improving the graph.")
-        feedback_placeholder = st.text_area("📝 Enter feedback about incorrect or missing relations:")
+        feedback_placeholder = st.text_area(" Enter feedback about incorrect or missing relations:")
         if st.button("Submit Feedback"):
-            st.success("✅ Feedback submitted successfully!")
+            st.success(" Feedback submitted successfully!")
 
-
-# ------------------------------
-# 🚀 Application Entry Point
-# ------------------------------
-
+#  Application Entry Point
 def main():
     # Initialize session state for authentication
     if "authenticated" not in st.session_state:

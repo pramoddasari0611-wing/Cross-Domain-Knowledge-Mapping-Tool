@@ -12,14 +12,11 @@ if not os.path.exists(file_path):
     raise FileNotFoundError(f"❌ File not found: {file_path}")
 
 df = pd.read_csv(file_path)
-print("✅ File loaded successfully!")
+print("File loaded successfully!")
 print("Columns in dataset:", list(df.columns))
 print(df.head(), "\n")
 
 # Check columns and adapt dynamically
-# -------------------------------------
-# Your ner.csv has columns: ['Sentence #', 'Sentence', 'POS', 'Tag']
-
 if "Sentence" in df.columns:
     # Example relation extraction (simplified demo)
     # Here we use the 'Sentence' column to create sample triples
@@ -37,7 +34,7 @@ else:
     raise ValueError("❌ Expected 'Sentence' column not found in dataset.")
 
 triples_df = pd.DataFrame(triples)
-print("✅ Triples created successfully!\n")
+print("Triples created successfully!\n")
 print(triples_df.head(), "\n")
 
 # Create Knowledge Graph
@@ -49,11 +46,10 @@ for _, row in triples_df.iterrows():
     rel = row["relation"]
     G.add_edge(subj, obj, label=rel)
 
-print(f"✅ Graph built with {len(G.nodes())} nodes and {len(G.edges())} edges.\n")
+print(f"Graph built with {len(G.nodes())} nodes and {len(G.edges())} edges.\n")
 
-# -------------------------------------
-# 4️⃣ Static Visualization (Matplotlib)
-# -------------------------------------
+# Static Visualization (Matplotlib)
+
 plt.figure(figsize=(10, 7))
 pos = nx.spring_layout(G, k=0.3)
 nx.draw(G, pos, with_labels=True, node_size=1200, node_color="lightblue", arrows=True, font_size=8)
