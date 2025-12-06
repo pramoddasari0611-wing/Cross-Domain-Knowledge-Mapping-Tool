@@ -1,0 +1,24 @@
+# Python Virtual Environments
+venv/
+.venv/
+
+# Python Cache Files
+__pycache__/
+*.pyc
+
+# IDE and Editor Files (VS Code, etc.)
+.vscode/
+.idea/
+*.swp
+
+# Operating System Files
+.DS_Store
+
+# Version Control Files (These are the most common irrelevant files)
+.git
+.gitignore
+
+# Documentation or Test Files (If they're not needed at runtime)
+tests/
+docs/
+*.md
