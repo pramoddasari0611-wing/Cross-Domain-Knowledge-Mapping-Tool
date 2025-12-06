@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #202020;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "font": {"color": "white"}, "id": "Carlos", "label": "Carlos", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Elsa", "label": "Elsa", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Mexican", "label": "Mexican", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "United States", "label": "United States", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Denmark", "label": "Denmark", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "one-month", "label": "one-month", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Colombia", "label": "Colombia", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Friday", "label": "Friday", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Minister Ehud Barak", "label": "Minister Ehud Barak", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "British", "label": "British", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Muslim", "label": "Muslim", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Shi\u0027ite", "label": "Shi\u0027ite", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "cleric", "label": "cleric", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "U.S.", "label": "U.S.", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Saddam", "label": "Saddam", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Baghdad", "label": "Baghdad", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "President Bush", "label": "President Bush", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "May", "label": "May", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Haiti", "label": "Haiti", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Venezuelan", "label": "Venezuelan", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Common Economic Space", "label": "Common Economic Space", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Russia", "label": "Russia", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Larry", "label": "Larry", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Washington", "label": "Washington", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "22", "label": "22", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "to nine-and-a-half", "label": "to nine-and-a-half", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Sudanese", "label": "Sudanese", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Monday", "label": "Monday", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Pakistan", "label": "Pakistan", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "past six", "label": "past six", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Afghanistan", "label": "Afghanistan", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Spin Boldak", "label": "Spin Boldak", "shape": "dot", "size": 10}, {"color": "lightblue", "font": {"color": "white"}, "id": "Vice President Dick Cheney", "label": "Vice President Dick Cheney", "shape": "dot", "size": 10}, {"color": "lightgreen", "font": {"color": "white"}, "id": "Adil Abdul Mahdi", "label": "Adil Abdul Mahdi", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Carlos", "label": "related_to", "to": "Elsa", "width": 1}, {"arrows": "to", "from": "Mexican", "label": "related_to", "to": "United States", "width": 1}, {"arrows": "to", "from": "Denmark", "label": "related_to", "to": "one-month", "width": 1}, {"arrows": "to", "from": "Colombia", "label": "related_to", "to": "United States", "width": 1}, {"arrows": "to", "from": "Friday", "label": "related_to", "to": "Minister Ehud Barak", "width": 1}, {"arrows": "to", "from": "British", "label": "related_to", "to": "Muslim", "width": 1}, {"arrows": "to", "from": "Shi\u0027ite", "label": "related_to", "to": "cleric", "width": 1}, {"arrows": "to", "from": "U.S.", "label": "related_to", "to": "Saddam", "width": 1}, {"arrows": "to", "from": "U.S.", "label": "related_to", "to": "U.S.", "width": 1}, {"arrows": "to", "from": "U.S.", "label": "related_to", "to": "Baghdad", "width": 1}, {"arrows": "to", "from": "President Bush", "label": "related_to", "to": "May", "width": 1}, {"arrows": "to", "from": "Haiti", "label": "related_to", "to": "Venezuelan", "width": 1}, {"arrows": "to", "from": "Common Economic Space", "label": "related_to", "to": "Russia", "width": 1}, {"arrows": "to", "from": "Larry", "label": "related_to", "to": "Washington", "width": 1}, {"arrows": "to", "from": "22", "label": "related_to", "to": "to nine-and-a-half", "width": 1}, {"arrows": "to", "from": "Sudanese", "label": "related_to", "to": "Monday", "width": 1}, {"arrows": "to", "from": "Pakistan", "label": "related_to", "to": "Pakistan", "width": 1}, {"arrows": "to", "from": "past six", "label": "related_to", "to": "Afghanistan", "width": 1}, {"arrows": "to", "from": "Spin Boldak", "label": "related_to", "to": "Pakistan", "width": 1}, {"arrows": "to", "from": "Vice President Dick Cheney", "label": "related_to", "to": "Adil Abdul Mahdi", "width": 1}, {"arrows": "to", "from": "Carlos", "label": "related_to", "title": "related_to", "to": "Elsa"}, {"arrows": "to", "from": "Mexican", "label": "related_to", "title": "related_to", "to": "United States"}, {"arrows": "to", "from": "Denmark", "label": "related_to", "title": "related_to", "to": "one-month"}, {"arrows": "to", "from": "Colombia", "label": "related_to", "title": "related_to", "to": "United States"}, {"arrows": "to", "from": "Friday", "label": "related_to", "title": "related_to", "to": "Minister Ehud Barak"}, {"arrows": "to", "from": "British", "label": "related_to", "title": "related_to", "to": "Muslim"}, {"arrows": "to", "from": "Shi\u0027ite", "label": "related_to", "title": "related_to", "to": "cleric"}, {"arrows": "to", "from": "U.S.", "label": "related_to", "title": "related_to", "to": "Saddam"}, {"arrows": "to", "from": "U.S.", "label": "related_to", "title": "related_to", "to": "U.S."}, {"arrows": "to", "from": "U.S.", "label": "related_to", "title": "related_to", "to": "Baghdad"}, {"arrows": "to", "from": "President Bush", "label": "related_to", "title": "related_to", "to": "May"}, {"arrows": "to", "from": "Haiti", "label": "related_to", "title": "related_to", "to": "Venezuelan"}, {"arrows": "to", "from": "Common Economic Space", "label": "related_to", "title": "related_to", "to": "Russia"}, {"arrows": "to", "from": "Larry", "label": "related_to", "title": "related_to", "to": "Washington"}, {"arrows": "to", "from": "22", "label": "related_to", "title": "related_to", "to": "to nine-and-a-half"}, {"arrows": "to", "from": "Sudanese", "label": "related_to", "title": "related_to", "to": "Monday"}, {"arrows": "to", "from": "Pakistan", "label": "related_to", "title": "related_to", "to": "Pakistan"}, {"arrows": "to", "from": "past six", "label": "related_to", "title": "related_to", "to": "Afghanistan"}, {"arrows": "to", "from": "Spin Boldak", "label": "related_to", "title": "related_to", "to": "Pakistan"}, {"arrows": "to", "from": "Vice President Dick Cheney", "label": "related_to", "title": "related_to", "to": "Adil Abdul Mahdi"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

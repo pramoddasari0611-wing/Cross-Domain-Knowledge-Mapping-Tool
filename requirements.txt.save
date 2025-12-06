@@ -1,0 +1,9 @@
+streamlit
+..spacy
+ndas
+pyvis
+networkx==3.2.1
+numpy
+matplotlib
+scikit-learn
+plotlydocker build -t ai-knowmap .
