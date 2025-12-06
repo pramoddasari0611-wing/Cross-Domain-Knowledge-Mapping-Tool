@@ -1,5 +1,5 @@
 streamlit
-..spacy
+
 ndas
 pyvis
 networkx==3.2.1

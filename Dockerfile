@@ -14,10 +14,6 @@ COPY requirements.txt ./
 # Use the system-wide package installer, pip.
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Run spaCy model downloads
-# Although spaCy is not in the requirements above, it is essential for the project.
-# We will download a small model for demonstration.
-RUN python -m spacy download en_core_web_sm
 
 # 3. Copy remaining project files
 # Copy the entire project content into the container (including ui/app.py and data/).
