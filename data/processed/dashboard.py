@@ -57,7 +57,7 @@ st.markdown("""
 
 # Sidebar Navigation
 
-st.sidebar.title("⚙️ Admin Controls")
+st.sidebar.title("Admin Controls")
 view = st.sidebar.selectbox(
     "Select a View:",
     ["Overview", "Entity Viewer", "Relation Graph", "Feedback Panel"]
@@ -85,20 +85,20 @@ for path in file_paths:
         data.columns = [f'col_{i}' for i in range(data.shape[1])]
         data = data.rename(columns={'col_0': 'subject', 'col_1': 'relation', 'col_2': 'object'})
         
-        st.sidebar.success(f"✅ Loaded dataset from:\n{path}")
+        st.sidebar.success(f"Loaded dataset from:\n{path}")
         break
     except Exception as e:
         continue
 
 if data is None:
-    st.error("❌ No valid dataset found. Please check your file paths.")
+    st.error(" No valid dataset found. Please check your file paths.")
     st.stop()
 
 
-# 📊 Overview Section 
+#  Overview Section 
 
 if view == "Overview":
-    st.title("📊 Admin Dashboard & Feedback Panel")
+    st.title(" Admin Dashboard & Feedback Panel")
     st.markdown("A control center for monitoring and improving your semantic knowledge graph.")
 
     # Define the configuration dictionary for Plotly charts
@@ -106,7 +106,7 @@ if view == "Overview":
     plotly_config = {'displayModeBar': False, 'responsive': True, 'width': 'stretch'}
     
     # --- 1. Graph Statistics ---
-    st.header("📈 Graph Statistics")
+    st.header(" Graph Statistics")
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Records", len(data))
@@ -179,14 +179,14 @@ if view == "Overview":
     st.markdown("---")
     
     # --- 3. Sample Data ---
-    st.header("🧠 Sample of Extracted Relations")
+    st.header("Sample of Extracted Relations")
     st.dataframe(data.head(10))
 
 
 #  Entity Viewer Section
 
 elif view == "Entity Viewer":
-    st.title("🔍 Explore Extracted Relations")
+    st.title(" Explore Extracted Relations")
 
     if 'subject' in data.columns and 'relation' in data.columns and 'object' in data.columns:
         
@@ -329,7 +329,7 @@ elif view == "Feedback Panel":
     It helps improve your semantic graph over time.
     """)
 
-    feedback_placeholder = st.text_area("📝 Enter feedback about incorrect or missing relations:")
+    feedback_placeholder = st.text_area(" Enter feedback about incorrect or missing relations:")
     if st.button("Submit Feedback"):
         st.success("Feedback submitted successfully!")
 

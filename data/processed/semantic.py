@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 
 triples_path = "/Users/dasari/Downloads/Cross_ Domain_Knowledge/ner_triples.csv"
 df = pd.read_csv(triples_path)
-print("✅ File loaded successfully!")
+print(" File loaded successfully!")
 print("Columns:", df.columns)
 print(df.head())
 
@@ -20,21 +20,21 @@ for _, row in sample_df.iterrows():
     obj = str(row["Object"])
     sentences.append(f"{subj} is {rel} {obj}.")
 
-print("\n✅ Natural-language sentences generated from triples:")
+print("\n Natural-language sentences generated from triples:")
 for i, s in enumerate(sentences, 1):
     print(f"{i}. {s}")
 
 #  Load semantic model
 
-print("\n⏳ Loading semantic model...")
+print("\n Loading semantic model...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
-print("✅ Model loaded successfully!")
+print(" Model loaded successfully!")
 
 sentence_embeddings = model.encode(sentences, convert_to_tensor=True)
 
 #  Semantic search query
 
-query = input("\n🔍 Enter your query (e.g., 'Who is part of a group?' or 'Political leaders in UK'): ")
+query = input("\n Enter your query (e.g., 'Who is part of a group?' or 'Political leaders in UK'): ")
 query_embedding = model.encode(query, convert_to_tensor=True)
 
 cosine_scores = util.cos_sim(query_embedding, sentence_embeddings)[0]
@@ -46,13 +46,13 @@ top_results = sorted(
     reverse=True
 )[:3]
 
-print("\n🔎 Top 3 most semantically similar sentences:")
+print("\n Top 3 most semantically similar sentences:")
 for idx, score in top_results:
     print(f"👉 {sentences[idx]}  (Score: {score:.4f})")
 
 # Reflection Prompt
 
-print("\n📝 Reflection:")
+print("\n Reflection:")
 print("- What kinds of queries gave the most accurate matches?")
 print("- Where did the model make mistakes?")
 print("- How could you improve the quality of your triples or embeddings?")

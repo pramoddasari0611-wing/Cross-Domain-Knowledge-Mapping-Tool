@@ -33,7 +33,7 @@ def login_page():
         }
     </style>
     <div class="login-box">
-    <h2>🔒 Admin Login</h2>
+    <h2> Admin Login</h2>
     """, unsafe_allow_html=True)
     
     with st.form("login_form"):
@@ -64,7 +64,7 @@ def login_page():
 def admin_dashboard():
     # Placeholder for your main dashboard logic
     # You would typically import and run the code from 'Extract Relation.py' here
-    st.title("✅ Welcome to the Admin Dashboard")
+    st.title(" Welcome to the Admin Dashboard")
     st.markdown("---")
     st.success(f"Logged in as {st.session_state['username']}.")
     

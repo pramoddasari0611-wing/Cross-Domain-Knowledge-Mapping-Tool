@@ -72,5 +72,5 @@ net.toggle_physics(True)
 output_file = "/Users/dasari/Downloads/Cross_ Domain_Knowledge/my_knowledge_graph.html"
 net.write_html(output_file)
 
-print(f"\n🌐 Graph saved to:\n{output_file}")
-print("👉 Open it manually in Chrome or Safari (not MKPlayer).")
+print(f"\n Graph saved to:\n{output_file}")
+print(" Open it manually in Chrome or Safari (not MKPlayer).")
