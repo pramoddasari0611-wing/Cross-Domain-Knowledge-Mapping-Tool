@@ -32,4 +32,5 @@ EXPOSE 8501
 # Note: Assuming your Streamlit app file is located at 'ui/app.py'
 
 # Replace the previous CMD instruction (e.g., 'streamlit_app.py') with the correct quoted name:
-CMD ["streamlit", "run", "Extract Relation.py", "--server.port=8501", "--server.enableCORS=true"]
+
+CMD ["streamlit", "run", "Extract Relation.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.baseUrlPath=/"]
