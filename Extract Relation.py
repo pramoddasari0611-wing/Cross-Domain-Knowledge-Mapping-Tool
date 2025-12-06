@@ -11,7 +11,10 @@ VALID_USERNAME = "admin"
 VALID_PASSWORD = "password123"
 plotly_config = {'displayModeBar': False, 'responsive': True} 
 
-#  Authentication Functions
+# ------------------------------
+# 🔑 Authentication Functions
+# ------------------------------
+
 def login_page():
     """Displays the login form and handles authentication."""
     # Change page title to AI-KnowMap
@@ -33,7 +36,7 @@ def login_page():
         h2 { color: #10b981 !important; text-align: center; margin-bottom: 20px; }
     </style>
     <div class="login-box">
-    <h2> AI-KnowMap Login</h2>
+    <h2>🔒 AI-KnowMap Login</h2>
     """, unsafe_allow_html=True)
     
     with st.form("login_form"):
@@ -56,6 +59,8 @@ def login_page():
             st.error("Invalid username or password.")
             
     st.markdown("</div>", unsafe_allow_html=True)
+
+
 # CRITICAL FIX for performance: Add Streamlit caching
 @st.cache_data
 def load_data():
@@ -77,13 +82,16 @@ def load_data():
         return data
 
     except FileNotFoundError:
-        st.error(" Required file 'ner_triples.csv' not found. Ensure it was created.")
+        st.error("❌ Required file 'ner_triples.csv' not found. Ensure it was created.")
         st.stop()
     except Exception as e:
-        st.error(f" An error occurred during final data loading: {e}")
+        st.error(f"❌ An error occurred during final data loading: {e}")
         st.stop()
 
-#  Main Dashboard Structure
+# ------------------------------
+# 🖥️ Main Dashboard Structure
+# ------------------------------
+
 def admin_dashboard(data):
     
     # --- Custom Dark Theme CSS ---
@@ -97,10 +105,10 @@ def admin_dashboard(data):
     """, unsafe_allow_html=True)
     
     # --- Sidebar Navigation ---
-    st.sidebar.title(" Admin Controls")
+    st.sidebar.title("⚙️ Admin Controls")
     st.sidebar.caption(f"User: {st.session_state['username']}")
     
-    if st.sidebar.button(" Log Out"):
+    if st.sidebar.button("🚪 Log Out"):
         st.session_state["authenticated"] = False
         st.session_state["username"] = None
         st.rerun()
@@ -112,21 +120,25 @@ def admin_dashboard(data):
     
     # --- Dataset Upload Status (for visual representation) ---
     st.sidebar.markdown("---") # Separator
-    st.sidebar.markdown("### Loaded Dataset")
-    st.sidebar.success(" Loaded dataset from:")
+    st.sidebar.markdown("### 💾 Loaded Dataset")
+    st.sidebar.success("✅ Loaded dataset from:")
     st.sidebar.markdown(f"```\n/usr/src/app/ner_triples.csv\n```") 
-
+    # --------------------------------------------------------
+    
     # Check for required columns
     required_cols = ['subject', 'relation', 'object']
     if not all(col in data.columns for col in required_cols):
         st.error(f"Data is missing required columns: {required_cols}. Cannot proceed.")
         return
 
-    # --- Overview Section ---
+    # --- 📊 Overview Section ---
     if view == "Overview":
-        st.title("Admin Dashboard & Distribution Analysis")
+        st.title("📊 Admin Dashboard & Distribution Analysis")
         
-        # Metrics
+        # Metrics 
+
+[Image of the Admin Dashboard and Distribution Analysis]
+
         col1, col2, col3 = st.columns(3)
         col1.metric("Total Records", len(data))
         all_entities = pd.concat([data['subject'], data['object']]).unique()
@@ -135,7 +147,7 @@ def admin_dashboard(data):
         
         st.markdown("---")
 
-        st.header(" Distribution Analysis")
+        st.header("📈 Distribution Analysis")
         entity_counts = pd.concat([data['subject'], data['object']]).value_counts().head(10)
         relation_counts = data['relation'].value_counts().head(10)
 
@@ -161,9 +173,9 @@ def admin_dashboard(data):
                 fig_relation.update_layout(yaxis={'categoryorder':'total ascending'}, plot_bgcolor='#1e293b', paper_bgcolor='#0f172a', font_color='white')
                 st.plotly_chart(fig_relation, config=plotly_config, width='stretch') 
 
-    # --- Entity Viewer Section ---
+    # --- 🔍 Entity Viewer Section ---
     elif view == "Entity Viewer":
-        st.title("Explore Extracted Relations")
+        st.title("🔍 Explore Extracted Relations")
         
         # --- Advanced Filtering for Entity Viewer ---
         search_column = st.selectbox(
@@ -193,9 +205,9 @@ def admin_dashboard(data):
         st.dataframe(display_data_final.head(num_rows), width='stretch')
 
 
-    # --- Relation Graph Section ---
+    # --- 🕸️ Relation Graph Section ---
     elif view == "Relation Graph":
-        st.title("Knowledge Relation Graph")
+        st.title("🕸️ Knowledge Relation Graph")
         
         # --- Filtering Controls ---
         st.markdown("Use the controls below to filter the graph by Entity or Relation Type, or reduce the sample size.")
@@ -206,7 +218,8 @@ def admin_dashboard(data):
         with col_filter_2:
             relation_filter = st.text_input("Filter by Relation Type (e.g., 'located_in'):")
 
-        max_rows = st.slider("Maximum number of rows (edges) to sample:", min_value=10, max_value=min(5000, len(data)), value=100)
+        # Memory Optimization: Reduced default value from 100 to 50
+        max_rows = st.slider("Maximum number of rows (edges) to sample:", min_value=10, max_value=min(5000, len(data)), value=50)
 
         # Apply Filters before limiting rows
         filtered_data = data.copy()
@@ -276,15 +289,19 @@ def admin_dashboard(data):
             st.warning("No relations found based on the current filters.")
 
 
-    # --- Feedback Section ---
+    # --- 🧩 Feedback Section ---
     elif view == "Feedback Panel":
-        st.title("User Feedback Summary")
+        st.title("💬 User Feedback Summary")
         st.markdown("This panel is used for logging and improving the graph.")
-        feedback_placeholder = st.text_area(" Enter feedback about incorrect or missing relations:")
+        feedback_placeholder = st.text_area("📝 Enter feedback about incorrect or missing relations:")
         if st.button("Submit Feedback"):
-            st.success(" Feedback submitted successfully!")
+            st.success("✅ Feedback submitted successfully!")
 
-#  Application Entry Point
+
+# ------------------------------
+# 🚀 Application Entry Point
+# ------------------------------
+
 def main():
     # Initialize session state for authentication
     if "authenticated" not in st.session_state:
