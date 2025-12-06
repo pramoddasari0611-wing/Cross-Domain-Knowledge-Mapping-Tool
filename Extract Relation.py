@@ -12,8 +12,6 @@ VALID_PASSWORD = "password123"
 plotly_config = {'displayModeBar': False, 'responsive': True} 
 
 #  Authentication Functions
-
-
 def login_page():
     """Displays the login form and handles authentication."""
     # Change page title to AI-KnowMap
@@ -35,7 +33,7 @@ def login_page():
         h2 { color: #10b981 !important; text-align: center; margin-bottom: 20px; }
     </style>
     <div class="login-box">
-    <h2>🔒 AI-KnowMap Login</h2>
+    <h2> AI-KnowMap Login</h2>
     """, unsafe_allow_html=True)
     
     with st.form("login_form"):
@@ -58,8 +56,6 @@ def login_page():
             st.error("Invalid username or password.")
             
     st.markdown("</div>", unsafe_allow_html=True)
-
-
 # CRITICAL FIX for performance: Add Streamlit caching
 @st.cache_data
 def load_data():
@@ -104,7 +100,7 @@ def admin_dashboard(data):
     st.sidebar.title(" Admin Controls")
     st.sidebar.caption(f"User: {st.session_state['username']}")
     
-    if st.sidebar.button("🚪 Log Out"):
+    if st.sidebar.button(" Log Out"):
         st.session_state["authenticated"] = False
         st.session_state["username"] = None
         st.rerun()
@@ -116,7 +112,7 @@ def admin_dashboard(data):
     
     # --- Dataset Upload Status (for visual representation) ---
     st.sidebar.markdown("---") # Separator
-    st.sidebar.markdown("### 💾 Loaded Dataset")
+    st.sidebar.markdown("### Loaded Dataset")
     st.sidebar.success(" Loaded dataset from:")
     st.sidebar.markdown(f"```\n/usr/src/app/ner_triples.csv\n```") 
 
