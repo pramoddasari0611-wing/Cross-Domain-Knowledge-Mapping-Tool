@@ -1,101 +1,11 @@
 Subject,Relation,Object,Subject_Type,Object_Type
-Pakistan,related_to,Karachi,geo,per
-Elton John,related_to,Happy Birthday,per,org
-England,related_to,EU,geo,org
-CNN,related_to,Iraq,org,geo
-Algiers,related_to,U.N.,geo,org
-South African,related_to,two,geo,tim
-six-year,related_to,January 10,tim,tim
-Tehran,related_to,Nuclear Non-Proliferation,org,org
-Japanese,related_to,London,gpe,geo
-Mohammad Ali Hosseini,related_to,Sunday,per,tim
-State Department,related_to,Monday,org,tim
-Mario Raviglione,related_to,WHO,per,org
-Republic,related_to,Europe,geo,geo
-Mr. Annan,related_to,Mr.,per,per
-Miami,related_to,Atlanta,geo,geo
-Egypt,related_to,Pakistan,geo,geo
-Mr. Obasanjo,related_to,African Union,per,geo
-Bosnian Serb,related_to,Serb,gpe,gpe
-Vietnam,related_to,Cambodia,geo,geo
-Egypt,related_to,West Bank,geo,org
-Vietnam,related_to,Lunar New Year,geo,org
-Mr. Chavez,related_to,Tuesday,per,tim
-Middle East,related_to,Israel,geo,gpe
-Germany,related_to,Britain,geo,geo
-Sarajevo,related_to,Dayton,geo,tim
-Rwandan,related_to,1994,gpe,tim
-United Nations,related_to,2003,org,tim
-Iraq,related_to,October 1,geo,tim
-Kabul,related_to,Monday,geo,tim
-North Korea,related_to,United States,geo,geo
-Michael Masser,related_to,Teddy Randazzo,per,per
-Tuesday,related_to,Monday afternoon,tim,tim
-Venezuela,related_to,Venezuela,geo,geo
-Hamas,related_to,Mhawesh al-Qadi,org,geo
-Israel,related_to,Hamas,geo,org
-two Koreas,related_to,China,tim,geo
-Iraq,related_to,four to six,geo,tim
-Indonesia,related_to,more than,geo,tim
-Prime Minister Recep Tayyip Erdogan,related_to,Turkey,per,org
-Palestinians,related_to,Gaza Strip,gpe,org
-Muslim-Croat Federation,related_to,Croat,org,gpe
-Prime Minister Tony Blair,related_to,Palestinian,per,gpe
-Tony Blair,related_to,Iraq,per,geo
-Agca,related_to,Italian,org,gpe
-Omar,related_to,Afghanistan,per,geo
-Mr. Castro,related_to,July,per,tim
-King Norodom SIHANOUK,related_to,Prince Norodom SIHAMONI,org,org
-President Pervez Musharraf,related_to,today,per,tim
-U.N.,related_to,Minister Vuk Draskovic,org,per
-David Passaro,related_to,and four,per,tim
-Wednesday night,related_to,Lakers,tim,org
-Monday,related_to,Palestinian,tim,gpe
-Gazprom,related_to,2010,org,tim
-Saddam Hussein,related_to,Saddam Hussein,per,per
-U.S. State Department,related_to,China,org,geo
-Japanese,related_to,Chile,gpe,geo
-Guardsmen,related_to,Tikrit,per,geo
-Somali,related_to,2008,gpe,tim
-AIDS,related_to,U.S.,org,geo
-Huygens,related_to,Titan,org,tim
-Mr.,related_to,Allawi 's bloc,per,org
-2010,related_to,first time,tim,tim
-U.S.,related_to,Iraq,geo,geo
-Tokage,related_to,Japan,org,geo
-Toluca,related_to,Friday,geo,tim
-Tuesday,related_to,U.S.,tim,geo
-Mr. Koizumi,related_to,Japan,per,geo
-Sunday,related_to,Pentagon,tim,org
-Veligonda,related_to,southern Andhra Pradesh,geo,geo
-U.S.,related_to,Committee,org,org
-Serb,related_to,Srebrenica,gpe,geo
-People 's National Convention,related_to,U.S. Congress,org,org
-European Union Development,related_to,Iraq,org,geo
-Israeli,related_to,Arab,gpe,gpe
-China,related_to,Sinopec,geo,geo
-North,related_to,Iraqi,geo,gpe
-May 2006,related_to,January 2007,tim,tim
-U.S.,related_to,Chalabi,geo,org
-one-China,related_to,China,geo,geo
-Ghana,related_to,Togo,geo,geo
-Caracas,related_to,Moscow,per,tim
-19th,related_to,Atlantic,tim,geo
-Henri Salvador,related_to,Paris,per,geo
 Islamic Army,related_to,Iraq,org,geo
-Luis Ernesto Derbez,related_to,Washington - Francisco Flores,per,geo
-Abbas,related_to,four,org,tim
-United Arab Emirates,related_to,Baghdad,geo,geo
-World War I,related_to,France,eve,geo
-Italian,related_to,Asia,gpe,geo
-12th century,related_to,13th - 15th,tim,tim
-Sunni,related_to,Ramadi and Kirkuk,org,org
-American,related_to,Ronald Allen Schultz,org,per
-Prime,related_to,Ehud Olmert,per,per
-U.N. Security Council,related_to,December,org,tim
-U.S. Central Intelligence Agency,related_to,Thailand,org,geo
-Friday Ecuador,related_to,President Lucio Gutierrez,tim,per
-Sunday,related_to,Srinagar,tim,geo
-Kabul,related_to,1976,geo,tim
-Chinese,related_to,Prime Minister Junichiro Koizumi,gpe,per
-Paynesville,related_to,John F. Kennedy Hospital,geo,geo
+Saddam Hussein,related_to,Saddam Hussein,per,per
+Serb,related_to,Srebrenica,gpe,geo
+Mr. Castro,related_to,July,per,tim
+Omar,related_to,Afghanistan,per,geo
+Palestinians,related_to,Gaza Strip,gpe,org
+Middle East,related_to,Israel,geo,gpe
+Caracas,related_to,Moscow,per,tim
+State Department,related_to,Monday,org,tim
+Pakistan,related_to,Karachi,geo,per
