@@ -1,11 +1,2 @@
 Subject,Relation,Object,Subject_Type,Object_Type
-Islamic Army,related_to,Iraq,org,geo
-Saddam Hussein,related_to,Saddam Hussein,per,per
-Serb,related_to,Srebrenica,gpe,geo
-Mr. Castro,related_to,July,per,tim
-Omar,related_to,Afghanistan,per,geo
-Palestinians,related_to,Gaza Strip,gpe,org
-Middle East,related_to,Israel,geo,gpe
-Caracas,related_to,Moscow,per,tim
 State Department,related_to,Monday,org,tim
-Pakistan,related_to,Karachi,geo,per
