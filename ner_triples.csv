@@ -1,501 +1,101 @@
 Subject,Relation,Object,Subject_Type,Object_Type
-King Norodom SIHANOUK,related_to,Prince Norodom SIHAMONI,org,org
-Noaman Gomaa,related_to,Wafd Party,org,org
-Israel,related_to,Hamas,geo,org
-Iraq,related_to,Turkey,geo,geo
-May,related_to,Beltran Leyva,tim,geo
-Palestinian,related_to,Cairo,gpe,geo
-Palestinian,related_to,two,gpe,tim
-Hamas,related_to,Gaza Strip,org,geo
-Textiles and Clothing,related_to,India,org,geo
-State Department,related_to,Monday,org,tim
-Russian,related_to,ABC,gpe,org
-President Pervez Musharraf,related_to,today,per,tim
-United Nations Secretary-General,related_to,U.N.,org,geo
-The Kremlin,related_to,Monday,org,tim
-New York,related_to,Secret Service,geo,org
-Paynesville,related_to,John F. Kennedy Hospital,geo,geo
-since 2004,related_to,Sudan,tim,gpe
-two,related_to,Bucharest,tim,geo
-Somali,related_to,2008,gpe,tim
-today,related_to,Christ,tim,tim
-Palestinian,related_to,Thursday,gpe,tim
-2005,related_to,December 2006 and October 2007,tim,tim
-David Passaro,related_to,and four,per,tim
-U.S.-based Human Rights,related_to,Shanghai,org,geo
-2010,related_to,President John Atta MILLS,tim,per
-Afghan,related_to,Pakistan,gpe,geo
-President Bush,related_to,Texas,per,geo
-Kosovo,related_to,U.S.,org,geo
-Jersey,related_to,England,per,geo
-U.N.,related_to,Iran,geo,geo
-Bosnian Serb,related_to,Serb,gpe,gpe
-Adkins,related_to,U.S. Embassy,per,org
-Britain,related_to,Portugal,geo,geo
-Omar,related_to,Afghanistan,per,geo
-FBI,related_to,Azerbaijan,org,geo
-Mr.,related_to,Goss,per,geo
-Kharrazi,related_to,Baghdad,geo,geo
-Tuesday,related_to,Yakov Chernikhov,tim,per
-Interim Haiti Reconstruction Commission,related_to,Haiti,org,geo
-Tuesday,related_to,U.S.,tim,geo
-New Orleans Arena,related_to,NBA Commissioner,org,org
-Asia-Pacific Economic Cooperation,related_to,Australia,org,geo
-U.S.,related_to,Dubai,geo,geo
-Afghanistan,related_to,Uzbekistan,geo,geo
-2005,related_to,BAKIEV,tim,org
-Iran,related_to,Parchin,geo,geo
-Sunday,related_to,Pentagon,tim,org
-President Bush,related_to,Wednesday,per,tim
-Venezuela,related_to,September 10,geo,tim
-Israeli,related_to,Gaza Strip,gpe,geo
-Egyptian,related_to,Cairo,gpe,geo
-President Bashar al-Assad,related_to,Syria,per,geo
-Africa,related_to,Darfur,geo,geo
-National Assembly,related_to,Friday,org,tim
-Palestine Hotel,related_to,Taras Portsyuk,geo,per
-Japanese,related_to,Chile,gpe,geo
-British,related_to,1825 - 55,gpe,tim
-Latin America,related_to,"1960s , 1970s",geo,tim
-Kosovo,related_to,U.S.,tim,geo
-BBC,related_to,Europe,org,geo
-Ericq Pierre,related_to,Sunday,per,tim
-U.S.,related_to,Iraqi,geo,gpe
-Japan,related_to,Security Council,geo,org
-Palestinians,related_to,Gaza Strip,gpe,org
-U.S.,related_to,U.S.,geo,org
-Mr. Chung,related_to,Korean,per,gpe
-Japan,related_to,Germany,geo,geo
-Moscow,related_to,Taleban,geo,org
-Japanese,related_to,London,gpe,geo
-U.S.,related_to,Chalabi,geo,org
-Indonesia,related_to,more than,geo,tim
-Chile,related_to,Thursday,geo,tim
-Wednesday night,related_to,Lakers,tim,org
-Elton John,related_to,Happy Birthday,per,org
-Indonesian,related_to,Indonesian,gpe,gpe
-Kabul,related_to,1976,geo,tim
-Sarajevo,related_to,Dayton,geo,tim
-Mr. Castro,related_to,July,per,tim
-Huygens,related_to,Titan,org,tim
-Toluca,related_to,Friday,geo,tim
-Angola,related_to,November 2009,geo,tim
-French,related_to,Sunday,gpe,tim
-19th,related_to,Atlantic,tim,geo
-American,related_to,Briton,gpe,gpe
-Mr. Annan,related_to,Mr.,per,per
-Vice President Dick Cheney,related_to,Adil Abdul Mahdi,per,per
-Sunday,related_to,Srinagar,tim,geo
-Chinese,related_to,two,gpe,tim
-Egypt,related_to,Niger,geo,gpe
-United States,related_to,Alberto Martin,geo,per
-Abbas,related_to,four,org,tim
-Iran,related_to,Shourd,geo,per
-NATO,related_to,ISAF,org,org
-Prime Minister Tony Blair,related_to,Palestinian,per,gpe
-Afghanistan,related_to,Kunar,tim,geo
-Robert Dudley,related_to,Russia,per,geo
-Moscow,related_to,Gazprom,geo,org
-Latin America,related_to,Europe,geo,geo
-Russian,related_to,Saturday,gpe,tim
-December 2004,related_to,Mozambique,tim,org
-Friday,related_to,Christmas Eve,tim,geo
-Kabul,related_to,Monday,geo,tim
-Baghdad,related_to,Thursday,geo,tim
-Anwar,related_to,three,per,tim
-Algiers,related_to,U.N.,geo,org
-Korean,related_to,Korean,gpe,gpe
-1995 Srebrenica,related_to,the Netherlands,tim,geo
-Cuba,related_to,U.S.,geo,geo
-November,related_to,Holocaust,tim,org
-2006,related_to,Millennium Challenge Corporation,tim,org
-Japan,related_to,Japanese,geo,gpe
-Canadian,related_to,Africa,gpe,geo
-August 2,related_to,3,tim,tim
-The Sultanate,related_to,Brunei,org,geo
-Thursday,related_to,Prime Minister Tony Blair,tim,per
-U.S.,related_to,day,org,tim
-five,related_to,later,tim,tim
-Lebanese,related_to,May 20,gpe,tim
-10-member Association of Southeast,related_to,Thailand,org,geo
-Prime Minister Benazir Bhutto,related_to,Pakistan People 's Party,per,org
-Lebanese,related_to,February,gpe,tim
-Red Cross,related_to,1990s,org,tim
-Turkish,related_to,2003,gpe,tim
-Interfax News Agency,related_to,Russian,org,gpe
-Tehran,related_to,Nuclear Non-Proliferation,org,org
-Syrian,related_to,Austrian,gpe,gpe
-Cubans,related_to,U.S.,gpe,geo
-U.S.,related_to,Poland,geo,geo
-National Committee,related_to,Wednesday,org,tim
-State,related_to,November,org,tim
-Polisario Front,related_to,President Olusegun Obasanjo,org,per
-Gazprom,related_to,2010,org,tim
-President Zardari,related_to,French,per,gpe
-U.S.,related_to,Friday,geo,tim
-Mr. Machimura,related_to,from 1910 to 1945,per,tim
-Beirut,related_to,Lebanese,geo,gpe
-Hormuz,related_to,Strait,geo,geo
-Bhutto,related_to,Pakistan,per,geo
-Lebanese,related_to,May 20,gpe,tim
-U.S.,related_to,Iraqis,geo,gpe
-Shi'ite,related_to,Ashura,org,eve
-Mr. Clinton,related_to,president George H.W. Bush,per,per
-Line Island,related_to,Kiribati,geo,geo
-Lleyton Hewitt,related_to,Thursday,per,tim
-U.S.,related_to,Kenya,org,geo
-Al-Rai,related_to,Friday,org,tim
-Israeli,related_to,1967 Six-Day War,gpe,tim
-Mr.,related_to,Japanese,per,gpe
-Guardsmen,related_to,Tikrit,per,geo
-February 8,related_to,Egypt,tim,geo
-Taiwan,related_to,1949,geo,tim
-Lynndie England,related_to,Texas,per,geo
-NASA,related_to,Earth,org,geo
-Friday,related_to,Kofi Annan,tim,per
-Caracas,related_to,Moscow,per,tim
-CNN,related_to,Iraq,org,geo
-Lebanon,related_to,afterward,geo,tim
-Poland,related_to,Iraq,geo,geo
-Prime Minister Junichiro Koizumi,related_to,Saturday and Sunday,per,tim
-Serb,related_to,Srebrenica,gpe,geo
-Sudan,related_to,Chad,org,geo
-Saturday,related_to,Wei Wei,tim,per
-Afghanistan,related_to,Tuesday,gpe,tim
-Saturday,related_to,Security Council,tim,org
-Christopher Howes,related_to,Cambodia,per,geo
-1993,related_to,23,tim,tim
-Japan,related_to,Junichiro Koizumi,geo,per
-Dongfeng,related_to,2009,per,tim
-Mr.,related_to,Yanukovych 's Party of Regions,per,org
-Red Cross,related_to,Putumayo,geo,geo
-U.S.,related_to,Vioxx,geo,art
-Tuesday,related_to,United States,tim,geo
-Islamic Army,related_to,Iraq,org,geo
-Hamas,related_to,Mhawesh al-Qadi,org,geo
-Friday,related_to,Mr.,tim,per
-Bush,related_to,Mexicans,per,gpe
-Iraq,related_to,Ramadi,geo,geo
-Tibet,related_to,John Paul,org,per
-White House Rose Garden,related_to,Regina Benjamin,art,per
-Argentina,related_to,18th century priest,geo,tim
-United Arab Emirates,related_to,Baghdad,geo,geo
-two,related_to,before,tim,tim
-Monday,related_to,Palestinian,tim,gpe
-Pakistani,related_to,Karachi,gpe,geo
-U.N. Covenant,related_to,Corruption,org,org
-Agca,related_to,Italian,org,gpe
-Wednesday,related_to,January 22,tim,tim
-Tuesday,related_to,IAEA,tim,org
-U.S.,related_to,San Diego,geo,geo
-Palestinian,related_to,July,gpe,tim
-Parnaz Azima,related_to,U.S.-funded Radio Farda,org,org
-Sudanese,related_to,Monday,gpe,tim
-Berlin,related_to,Iraq,geo,geo
-U.S. State Department,related_to,China,org,geo
-Mario Raviglione,related_to,WHO,per,org
-Iran,related_to,Russia,geo,geo
-U.S.,related_to,Israel,geo,geo
-Tuesday,related_to,Hebei,tim,geo
-November,related_to,January 27,tim,tim
-China,related_to,Hanoi,geo,geo
-one-day,related_to,Abkhazia,tim,geo
-Swiss,related_to,Roger Federer,gpe,per
-Guantanamo Bay,related_to,Afghanistan,geo,geo
-35,related_to,Chaco,tim,geo
-AIDS,related_to,U.S.,org,geo
-Hague,related_to,Haradinaj,org,org
-Muslim protests,related_to,Prophet Muhammad,org,org
-April 2010,related_to,BAKIEV,tim,org
-Perth,related_to,Australia,geo,geo
-Prime Minister Recep Tayyip Erdogan,related_to,Turkey,per,org
-Afghanistan,related_to,Uruzgan,geo,geo
-Iraq,related_to,October 1,geo,tim
-Kiryenko,related_to,Moscow,per,geo
-Monday,related_to,Vienna,tim,geo
-Israeli,related_to,Gaza,gpe,geo
-Panama,related_to,"August 26 , 2004",geo,tim
-CNN Television,related_to,Tuesday,org,tim
-Li Rui,related_to,Li Pu,per,per
-Indonesia,related_to,Malaysia,geo,geo
-Pakistan,related_to,Islamabad,gpe,per
-before,related_to,National Assembly,tim,org
-Wednesday,related_to,Kabul,tim,org
-Kenyan,related_to,Kenya,gpe,per
-American,related_to,Chrysler,gpe,org
-Palestinian,related_to,West Bank,gpe,org
-Mr. Deby,related_to,February 15,per,tim
-Interfax,related_to,Saturday,org,tim
-Sunday,related_to,Egyptian,tim,gpe
-Afghan,related_to,Afghanistan,gpe,geo
-", Jagdish Tytler",related_to,Manmohan Singh,org,per
-Israeli,related_to,Kfar Darom,gpe,org
-Mr. Abbas,related_to,Israel,per,geo
-55-year-old,related_to,Saddam Hussein,org,per
-Chinese,related_to,U.S.,gpe,geo
-Hamas,related_to,Popular Resistance Committee,org,org
-Chechnya,related_to,2002,geo,tim
-Canberra International,related_to,Australia,org,geo
-Islamabad,related_to,President,geo,per
-Veligonda,related_to,southern Andhra Pradesh,geo,geo
-Beijing,related_to,North Korea,geo,geo
-Colombia,related_to,Ecuador,geo,geo
-Tajikistan,related_to,India,geo,geo
-Kandahar,related_to,Panjwayi,geo,geo
-Balad,related_to,Baghdad,geo,geo
-Colombian,related_to,Colombia,gpe,geo
-Britain,related_to,Iran,geo,geo
-Italy 's,related_to,Afghanistan,org,geo
-Croatian,related_to,Cameroon,gpe,geo
-U.S.,related_to,Baghdad,geo,geo
-Justice Department,related_to,U.S. District Court,org,org
-southern France,related_to,armistice that,geo,tim
-Clinton,related_to,Iranians,per,gpe
-U.S.,related_to,al-Qaida,geo,org
-Sudan 's Darfur,related_to,Chad,org,geo
-Albanians,related_to,Macedonian,gpe,gpe
-KIM Jong Il,related_to,KIM Jong Un,per,org
-French,related_to,90,gpe,tim
-Monday,related_to,Japanese,tim,gpe
-U.S.,related_to,New Orleans,geo,geo
-Haitian,related_to,Mr. Preval,gpe,per
-VOA,related_to,Nicholas Burns,org,per
-Ukraine,related_to,Yushchenko,geo,org
-2010,related_to,first time,tim,tim
-1236,related_to,Belarus,tim,geo
-Mohamed Abdelaziz,related_to,Nigerian,per,gpe
-Medvedev,related_to,Ukraine,per,geo
-Al-Qaida,related_to,Iraq,org,geo
-Mr. Katsav,related_to,Wednesday,per,tim
-May 2006,related_to,January 2007,tim,tim
-Mowlam,related_to,Friday morning,org,tim
-December 2006,related_to,Jigme Khesar Namgyel WANGCHUCK,tim,org
-NATO,related_to,Afghan,org,gpe
-U.S. Navy,related_to,Somalia,org,geo
-Chile,related_to,President Alberto Fujimori,geo,per
-Amnesty International,related_to,West Bank and Gaza Strip,org,org
-since,related_to,August,tim,tim
-Israel,related_to,Israel,geo,geo
-European Union Development,related_to,Iraq,org,geo
-12th century,related_to,13th - 15th,tim,tim
-NATO,related_to,Taliban,org,org
-Middle East,related_to,Israel,geo,gpe
-J. B. Penn,related_to,Monday,per,tim
-Ekaterina Bychkova,related_to,Wednesday,per,tim
-North,related_to,Korean,geo,gpe
-NATO,related_to,Helmand,org,geo
-Defense Investment,related_to,Wednesday,org,tim
-Canadian Security Intelligence Service,related_to,Canada,org,geo
-London,related_to,Pakistan,geo,geo
-Palestinian,related_to,Wednesday,gpe,tim
-Wednesday,related_to,Port-au-Prince,tim,geo
-Israeli,related_to,Arab,gpe,gpe
-Jalalabad,related_to,Pakistan,geo,geo
-U.N.,related_to,Hariri,geo,per
-Germany,related_to,Slovakia,geo,geo
-Saudi Arabia,related_to,Sunday,geo,tim
-India,related_to,India,geo,geo
-Mr. Bush,related_to,Iraq,per,geo
-U.S. Marines,related_to,Western,org,org
-U.S.,related_to,Iraq,geo,geo
-January 1st,related_to,Ears Day,tim,tim
-1860s,related_to,Central Asia,tim,geo
-al-Qaida,related_to,Afghan,org,gpe
-Mr. Annan,related_to,U.N.,per,org
-Israeli,related_to,West Bank,gpe,org
-North,related_to,Iraqi,geo,gpe
-United States,related_to,Iran,geo,geo
-World War II,related_to,Slovenia,eve,per
-Sudan,related_to,Idriss Deby,gpe,per
-Pisanu,related_to,Italians,per,gpe
-IMF,related_to,January,org,tim
-Wednesday,related_to,Mr. Ahmadinejad,tim,per
-of Singapore,related_to,of Borneo,org,org
-Italian,related_to,Asia,gpe,geo
-Pakistan,related_to,April,gpe,tim
-Sunday,related_to,Banja Luka,tim,geo
-Aung San Suu Kyi,related_to,since 2003,geo,tim
-Vietnam,related_to,Cambodia,geo,geo
-China,related_to,Sinopec,geo,geo
-Sunday,related_to,U.S.,tim,geo
-Mr. Erdogan,related_to,President Mahmoud Ahmadinejad,per,per
-Security Council,related_to,France,org,geo
-Luis Ernesto Derbez,related_to,Washington - Francisco Flores,per,geo
-Mr. Ban,related_to,U.N.,per,geo
-U.S.,related_to,Iraq,geo,geo
-U.N. Security Council,related_to,December,org,tim
-Sao Tome,related_to,Principe,per,per
-20,related_to,Antarctic Peninsula,tim,geo
-Spanish,related_to,Tuesday,gpe,tim
-Taleban,related_to,Saturday evening,org,tim
-Monday,related_to,U.S. Marine,tim,geo
-Maulana Fazlullah,related_to,Muslim,geo,org
-August 2006,related_to,Gulf,tim,geo
-Inter American Press Association,related_to,Information,org,org
-two Koreas,related_to,China,tim,geo
-North Korea,related_to,United States,geo,geo
-International Atomic Energy Agency,related_to,Iran,org,geo
-Tuesday,related_to,Monday afternoon,tim,tim
-Iraq,related_to,Saturday,geo,tim
-London,related_to,past two,geo,tim
-U.S.,related_to,Jordan,geo,gpe
-Hamas,related_to,Israel,org,org
-People 's National Convention,related_to,U.S. Congress,org,org
-Tatiana Golovin,related_to,France,per,geo
-Indonesian,related_to,Jakarta,gpe,geo
-two U.S,related_to,Iraqis,tim,gpe
-Reyes,related_to,Ecuador,per,geo
-Wal-Mart,related_to,United Kingdom,org,geo
-Friday Ecuador,related_to,President Lucio Gutierrez,tim,per
-Afghan,related_to,Taliban,gpe,org
-Washington,related_to,U.S.,org,geo
-U.N.,related_to,Pyongyang,org,gpe
-Wednesday,related_to,April,tim,tim
-Serb,related_to,Srebrenica,gpe,geo
-18th century,related_to,British,tim,gpe
-Monday,related_to,Syria,tim,geo
-Thursday,related_to,Gabcikovo,tim,geo
-Germany,related_to,Britain,geo,geo
-Milosevic,related_to,Pozarevac,per,geo
-Tuesday,related_to,Javad Vaeidi,tim,per
-Rio De Janeiro,related_to,South Africa ; Hamburg,org,geo
-Palestinian,related_to,Israel,gpe,geo
 Pakistan,related_to,Karachi,geo,per
-Prime,related_to,Ehud Olmert,per,per
-Wednesday,related_to,Ilam,tim,geo
-Ali Asghar Ahmadi,related_to,Iran,per,geo
-Friday,related_to,Tikrit,tim,geo
-Kosovo Liberation Army,related_to,Selim Krasniqi,org,per
-Middle East,related_to,Europe,geo,geo
-White House,related_to,President Bush,org,per
-Iraq,related_to,Thursday,geo,tim
-Iran,related_to,Islam,geo,geo
-Miami,related_to,Atlanta,geo,geo
-Taliban,related_to,Afghanistan,org,geo
-Venezuelan,related_to,President Chavez,gpe,per
+Elton John,related_to,Happy Birthday,per,org
 England,related_to,EU,geo,org
-Saturday,related_to,Pulwama,tim,geo
-Moscow,related_to,Iran,per,geo
-six-year,related_to,January 10,tim,tim
-World Health Organization,related_to,Margaret Chan,org,per
-Israeli,related_to,Hamas,gpe,org
-Palestinians,related_to,Friday,gpe,tim
-Sunni,related_to,Ramadi and Kirkuk,org,org
-Stein,related_to,south of Baghdad,per,geo
-August 31,related_to,Iran,tim,geo
-Muslim-Croat Federation,related_to,Croat,org,gpe
-New York Times,related_to,Defense Department,org,org
-',related_to,Palestinian,per,gpe
-in November,related_to,Iraq,tim,geo
-Egypt,related_to,Pakistan,geo,geo
-english,related_to,Daily Mirror,art,art
-Britain,related_to,Germany,geo,geo
-U.S.,related_to,Committee,org,org
-Mr. Egeland,related_to,Maldives,per,geo
-Sudanese,related_to,Sudan Media Center,gpe,org
+CNN,related_to,Iraq,org,geo
+Algiers,related_to,U.N.,geo,org
 South African,related_to,two,geo,tim
-Pakistani,related_to,Red Fort,gpe,geo
-Germany,related_to,Tehran,geo,geo
-oil-rich,related_to,past two,org,tim
-Kurdish,related_to,TAK,org,org
-Sunni Arab,related_to,Baghdad,per,geo
-China,related_to,few,geo,tim
-German,related_to,Soviet Union,gpe,geo
-Mastrogiacomo,related_to,since 2002,per,tim
-United States,related_to,President Fidel Castro,geo,per
-Twitter,related_to,National Breast Cancer Awareness Month,art,org
-U.S.,related_to,Afghan,geo,gpe
-Republic,related_to,Europe,geo,geo
-Soviet Union,related_to,Kazakhstan,geo,per
-Egypt,related_to,West Bank,geo,org
-Iraq,related_to,four to six,geo,tim
-Saddam Hussein,related_to,Saddam Hussein,per,per
-Sudan,related_to,southern Sudan,gpe,geo
-U.S. Defense Department,related_to,Paul Swiergosz,org,per
-American,related_to,southern Afghanistan,gpe,geo
-World War I,related_to,France,eve,geo
-U.N.,related_to,Minister Vuk Draskovic,org,per
-Venezuela,related_to,Mr. Chavez,org,per
-The International Criminal Tribunal,related_to,Monday,org,tim
-France,related_to,Tehran,geo,geo
-Muslim,related_to,Friday,org,tim
-President Bush,related_to,Palestinians,per,gpe
-Donald Rumsfeld,related_to,American,per,gpe
-Pakistani,related_to,Sunday night,gpe,tim
-8.15,related_to,time,tim,tim
-African Union,related_to,Sudan,org,gpe
-Mr. Caldera,related_to,Hugo Chavez,per,per
-Turks,related_to,11th - 13th,gpe,tim
-Chad,related_to,N'Djamena,geo,tim
-Burma,related_to,Irrawaddy River,geo,org
-Somali,related_to,six,gpe,tim
-Mr.,related_to,Georgia,per,geo
-U.S. Central Intelligence Agency,related_to,Thailand,org,geo
-Friday,related_to,Saturday,tim,tim
-Dan Halutz,related_to,Lebanon,per,geo
-Afghan,related_to,NATO,gpe,org
-Russian,related_to,Tony Blair,gpe,per
-State Department,related_to,Wednesday,org,tim
-Senegalese,related_to,China,gpe,geo
-Chinese,related_to,Prime Minister Junichiro Koizumi,gpe,per
-German,related_to,Chancellor Gerhard Schroeder,gpe,per
-Venezuela,related_to,Venezuela,geo,geo
-Fats Domino,related_to,New Orleans,per,geo
-Thursday,related_to,Indonesia,tim,geo
-Chinese,related_to,Wolong,gpe,org
-Vatican City,related_to,Sunday,geo,tim
-Minister Alexander Khetaguri,related_to,Thursday,per,tim
-Wednesday,related_to,Islamist,tim,org
-President Clinton,related_to,1998,per,tim
-al-Hindi,related_to,Tuesday,per,tim
-Charsadda,related_to,northwestern Pakistan,geo,geo
+six-year,related_to,January 10,tim,tim
+Tehran,related_to,Nuclear Non-Proliferation,org,org
+Japanese,related_to,London,gpe,geo
 Mohammad Ali Hosseini,related_to,Sunday,per,tim
-Mr. Koizumi,related_to,Japan,per,geo
-Guatemalan,related_to,Panabaj,gpe,geo
-1992,related_to,Serb,tim,gpe
-Sweden,related_to,Germany,geo,geo
-one-China,related_to,China,geo,geo
-Red Sea,related_to,Islam,geo,geo
-06-Mar,related_to,06-Mar,geo,geo
-Israeli,related_to,January 4,gpe,tim
-Asia,related_to,Nikkei,geo,geo
-Condoleezza Rice,related_to,Middle East,per,geo
-Rwandan,related_to,1994,gpe,tim
-U.S.,related_to,President Bush,geo,per
-Zhari,related_to,Kandahar,per,geo
-Sunday,related_to,Pope Benedict,tim,per
-Ghana,related_to,Togo,geo,geo
-Macedonia,related_to,Greek,geo,gpe
-Nepal,related_to,Hindu,gpe,org
-Honduras,related_to,San Andres,geo,geo
-National Guard,related_to,Baghdad,org,geo
-three-day,related_to,ASEAN,tim,org
-Ukraine,related_to,Crimean,geo,gpe
-American,related_to,Ronald Allen Schultz,org,per
-Cuba,related_to,US embargo,geo,geo
-VOA,related_to,English to Africa,org,org
-Michael Masser,related_to,Teddy Randazzo,per,per
-Bedfordshire,related_to,Omar Khayam,gpe,per
-Henri Salvador,related_to,Paris,per,geo
-Tauran,related_to,President Mahmoud Ahmadinejad,per,per
-New York,related_to,Human Rights Watch,geo,org
-Friday,related_to,Europe,tim,geo
-Monday,related_to,Afghan,tim,gpe
-two,related_to,since,tim,tim
-Tokage,related_to,Japan,org,geo
-Iran,related_to,2009,geo,tim
-Tony Blair,related_to,Iraq,per,geo
-American,related_to,Sunday,gpe,tim
-NATO,related_to,Sarajevo,org,geo
-Uzbeks,related_to,Osh,gpe,geo
-U.N.,related_to,High Commissioner for Human Rights,org,org
+State Department,related_to,Monday,org,tim
+Mario Raviglione,related_to,WHO,per,org
+Republic,related_to,Europe,geo,geo
+Mr. Annan,related_to,Mr.,per,per
+Miami,related_to,Atlanta,geo,geo
+Egypt,related_to,Pakistan,geo,geo
+Mr. Obasanjo,related_to,African Union,per,geo
+Bosnian Serb,related_to,Serb,gpe,gpe
+Vietnam,related_to,Cambodia,geo,geo
+Egypt,related_to,West Bank,geo,org
 Vietnam,related_to,Lunar New Year,geo,org
 Mr. Chavez,related_to,Tuesday,per,tim
-Alvarez,related_to,Osama bin Laden,per,per
-Noaman Gomaa,related_to,Saturday,per,tim
-Mr.,related_to,Allawi 's bloc,per,org
-Mr. Obasanjo,related_to,African Union,per,geo
-overnight marriage,related_to,Beit Hanun,tim,org
+Middle East,related_to,Israel,geo,gpe
+Germany,related_to,Britain,geo,geo
+Sarajevo,related_to,Dayton,geo,tim
+Rwandan,related_to,1994,gpe,tim
 United Nations,related_to,2003,org,tim
-Mr.,related_to,Ahmadinejad,per,org
-Prime,related_to,Indian,per,gpe
+Iraq,related_to,October 1,geo,tim
+Kabul,related_to,Monday,geo,tim
+North Korea,related_to,United States,geo,geo
+Michael Masser,related_to,Teddy Randazzo,per,per
+Tuesday,related_to,Monday afternoon,tim,tim
+Venezuela,related_to,Venezuela,geo,geo
+Hamas,related_to,Mhawesh al-Qadi,org,geo
+Israel,related_to,Hamas,geo,org
+two Koreas,related_to,China,tim,geo
+Iraq,related_to,four to six,geo,tim
+Indonesia,related_to,more than,geo,tim
+Prime Minister Recep Tayyip Erdogan,related_to,Turkey,per,org
+Palestinians,related_to,Gaza Strip,gpe,org
+Muslim-Croat Federation,related_to,Croat,org,gpe
+Prime Minister Tony Blair,related_to,Palestinian,per,gpe
+Tony Blair,related_to,Iraq,per,geo
+Agca,related_to,Italian,org,gpe
+Omar,related_to,Afghanistan,per,geo
+Mr. Castro,related_to,July,per,tim
+King Norodom SIHANOUK,related_to,Prince Norodom SIHAMONI,org,org
+President Pervez Musharraf,related_to,today,per,tim
+U.N.,related_to,Minister Vuk Draskovic,org,per
+David Passaro,related_to,and four,per,tim
+Wednesday night,related_to,Lakers,tim,org
+Monday,related_to,Palestinian,tim,gpe
+Gazprom,related_to,2010,org,tim
+Saddam Hussein,related_to,Saddam Hussein,per,per
+U.S. State Department,related_to,China,org,geo
+Japanese,related_to,Chile,gpe,geo
+Guardsmen,related_to,Tikrit,per,geo
+Somali,related_to,2008,gpe,tim
+AIDS,related_to,U.S.,org,geo
+Huygens,related_to,Titan,org,tim
+Mr.,related_to,Allawi 's bloc,per,org
+2010,related_to,first time,tim,tim
+U.S.,related_to,Iraq,geo,geo
+Tokage,related_to,Japan,org,geo
+Toluca,related_to,Friday,geo,tim
+Tuesday,related_to,U.S.,tim,geo
+Mr. Koizumi,related_to,Japan,per,geo
+Sunday,related_to,Pentagon,tim,org
+Veligonda,related_to,southern Andhra Pradesh,geo,geo
+U.S.,related_to,Committee,org,org
+Serb,related_to,Srebrenica,gpe,geo
+People 's National Convention,related_to,U.S. Congress,org,org
+European Union Development,related_to,Iraq,org,geo
+Israeli,related_to,Arab,gpe,gpe
+China,related_to,Sinopec,geo,geo
+North,related_to,Iraqi,geo,gpe
+May 2006,related_to,January 2007,tim,tim
+U.S.,related_to,Chalabi,geo,org
+one-China,related_to,China,geo,geo
+Ghana,related_to,Togo,geo,geo
+Caracas,related_to,Moscow,per,tim
+19th,related_to,Atlantic,tim,geo
+Henri Salvador,related_to,Paris,per,geo
+Islamic Army,related_to,Iraq,org,geo
+Luis Ernesto Derbez,related_to,Washington - Francisco Flores,per,geo
+Abbas,related_to,four,org,tim
+United Arab Emirates,related_to,Baghdad,geo,geo
+World War I,related_to,France,eve,geo
+Italian,related_to,Asia,gpe,geo
+12th century,related_to,13th - 15th,tim,tim
+Sunni,related_to,Ramadi and Kirkuk,org,org
+American,related_to,Ronald Allen Schultz,org,per
+Prime,related_to,Ehud Olmert,per,per
+U.N. Security Council,related_to,December,org,tim
+U.S. Central Intelligence Agency,related_to,Thailand,org,geo
+Friday Ecuador,related_to,President Lucio Gutierrez,tim,per
+Sunday,related_to,Srinagar,tim,geo
+Kabul,related_to,1976,geo,tim
+Chinese,related_to,Prime Minister Junichiro Koizumi,gpe,per
+Paynesville,related_to,John F. Kennedy Hospital,geo,geo
